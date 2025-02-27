@@ -12,6 +12,10 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
+app.get("/saludo", (req: Request, res: Response) => {
+  res.json({ message: "Hola, bienvenido a la API" });
+});
+
 app.listen(PORT, () => console.log(`Server running on puerto ${PORT}`));
 
 export default app;
