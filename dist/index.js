@@ -14,5 +14,8 @@ app.get("/", (req, res) => {
         timestamp: new Date().toISOString(),
     });
 });
+app.get("/saludo", (req, res) => {
+    res.json({ message: "Hola, bienvenido a la API" });
+});
 app.listen(PORT, () => console.log(`Server running on puerto ${PORT}`));
 exports.default = app;
