@@ -18,7 +18,10 @@ app.get("/saludo", (req, res) => {
     res.json({ message: "Hola, bienvenido a la API" });
 });
 app.get("/api/v1", (req, res) => {
-    res.json({ message: "API versión 7" });
+    res.json({ message: "API versión 1" });
+});
+app.get("/api/v1/funiona", (req, res) => {
+    res.json({ message: "Vercel hace build automaticamente" });
 });
 app.listen(PORT, () => console.log(`Server running on puerto ${PORT}`));
 exports.default = app;

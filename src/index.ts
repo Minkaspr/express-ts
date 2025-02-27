@@ -1,7 +1,6 @@
-import "express-async-errors"; 
-import express, { Request, Response, Express } from "express";
+import express, { Request, Response } from "express";
 
-const app: Express = express();
+const app = express();
 const PORT = process.env.PORT || 3000;
 const AUTHOR = process.env.AUTHOR || "Desconocido";
 
